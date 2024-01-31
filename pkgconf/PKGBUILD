@@ -1,7 +1,7 @@
 # Maintainer: Bartlomiej Piotrowski <nospam@bpiotrowski.pl>
 
 pkgname=pkgconf
-pkgver=2.1.0
+pkgver=478199b425b46e9dae36bb174f1bd08bf3ffb0f1
 pkgrel=1
 pkgdesc='pkg-config compatible utility which does not depend on glib'
 url='https://github.com/pkgconf/pkgconf'
@@ -13,11 +13,11 @@ makedepends=('meson'
 conflicts=('pkg-config')
 provides=('pkg-config')
 replaces=('pkg-config')
-source=(https://github.com/pkgconf/pkgconf/archive/pkgconf-$pkgver/$pkgname-$pkgver.tar.gz)
-sha256sums=('aaf6ed6288c1560b7038fa4c37297161e1a69b4a751bc6fb541ca30ecba19aa6')
+source=(https://github.com/qazwsxedcrfvtg14/pkgconf/archive/478199b425b46e9dae36bb174f1bd08bf3ffb0f1.tar.gz)
+sha256sums=('10dddb20625360bf0e8dd3f1b7d9eab0659572bf6ec6fa8a90de180a427b309b')
 
 prepare() {
-  mv "${pkgname}-${pkgname}-${pkgver}" "${pkgname}-${pkgver}"
+  # mv "${pkgname}-${pkgname}-${pkgver}" "${pkgname}-${pkgver}"
   cd "${srcdir}/${pkgname}-${pkgver}"
 }
 
